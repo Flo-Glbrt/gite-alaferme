@@ -1,5 +1,6 @@
-import { GetStaticProps } from 'next'
-import Link from 'next/link'
+/* eslint-disable react/jsx-one-expression-per-line */
+import { GetStaticProps } from 'next';
+import Link from 'next/link';
 
 import { User } from '../../domain/models/User';
 import { usersMock } from '../../mocks/users';
@@ -24,7 +25,7 @@ const WithStaticProps = ({ items }: Props) => (
       </Link>
     </p>
   </Layout>
-)
+);
 
 export const getStaticProps: GetStaticProps = async () => {
   // Example for including static props in a Next.js function component page.
@@ -32,6 +33,6 @@ export const getStaticProps: GetStaticProps = async () => {
   // the component.
   const items: User[] = usersMock;
   return { props: { items } };
-}
+};
 
 export default WithStaticProps;

@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Link from 'next/link';
 import Layout from '../infrastructure/views/components/Layout';
 
 const AboutPage = () => (
@@ -11,6 +11,6 @@ const AboutPage = () => (
       </Link>
     </p>
   </Layout>
-)
+);
 
-export default AboutPage
+export default AboutPage;

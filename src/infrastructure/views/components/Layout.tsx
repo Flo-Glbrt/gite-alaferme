@@ -7,14 +7,14 @@ type Props = {
   title?: string
 };
 
-const Layout = ({ children, title = 'This is the default title' }: Props) => (
+const Layout = ({ children, title = 'Gite à la ferme' }: Props) => (
   <div>
     <Head>
       <title>{title}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
-    <header>
+    {/* <header>
       <nav>
         <Link href="/">
           <a>Home</a>
@@ -35,12 +35,12 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
         |
         <a href="/api/users">Users API</a>
       </nav>
-    </header>
+    </header> */}
     {children}
-    <footer>
+    {/* <footer>
       <hr />
       <span>L&apos;appareil (Footer)</span>
-    </footer>
+    </footer> */}
   </div>
 );
 
